@@ -26,4 +26,4 @@ Da stvari budu jednostavnije, priložen je jednostavni *Makefile*, pa je samo po
 
     make
 
-te naravno popuniti životopis (cv_template_hr.tex) svojim podacima odnosno prema potrebi kreirati datoteku *publications.bib* koja će sadržavati popis objavljenih stručnih ili znanstvenih radova koji će biti uključen u životopis.
+te naravno popuniti životopis (*cv_template_hr.tex*) svojim podacima odnosno prema potrebi kreirati datoteku *publications.bib* koja će sadržavati popis objavljenih stručnih ili znanstvenih radova koji će biti uključen u životopis.
