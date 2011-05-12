@@ -7,6 +7,21 @@ Postupak je testiran na Ubuntu GNU/Linux distribuciji s *texlive* paketom, stand
 
 Za rad s LaTeX dokumentima koristim *gedit-ov* LaTeX *plugin*, pa je zato naredba takva.
 
+Europass klasu potom je potrebno upoznati s činjenicom da postoji novi prijevod, koji se u ovom slučaju naziva *croatian*. Potrebne su izmjene u datoteci *europecv.cls*, puna putanja do nje je
+
+    /usr/share/texmf-texlive/tex/latex/europecv/europecv.cls
+
+a sadržaj koji je potrebno dodati je
+
+    \DeclareOption{croatian}{%
+      \AtEndOfPackage{%
+        \InputIfFileExists{ecvhr.def}{}{%
+        \ClassWarningNoLine{europecv}{Croatian definition file 'ecvhr.def' not found}}%
+      }%
+    }
+
+Ja sam ga dodao na linije 27-32, ali moguće su i druge lokacije nakon *% Set language* komentara.
+
 Da stvari budu jednostavnije, priložen je jednostavni *Makefile*, pa je samo potrebno instalirati *prerequisite* i pokrenuti
 
     make
