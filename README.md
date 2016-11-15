@@ -3,7 +3,7 @@ S obzirom da neslužbena [LaTeX klasa za izradu životopisa u Europass formatu](
 
 Postupak je testiran na Ubuntu GNU/Linux distribuciji s *texlive* paketom, standardni YMMV *disclaimer* i dalje vrijedi. U mom slučaju, potrebni paketi instalirani su naredbom
 
-    sudo apt-get install gedit-latex-plugin texlive-lang-croatian texlive-formats-extra texlive-latex-extra
+    sudo apt-get install gedit-latex-plugin texlive-lang-european texlive-formats-extra texlive-latex-extra
 
 Za rad s LaTeX dokumentima koristim *gedit-ov* LaTeX *plugin*, pa je zato naredba takva.
 
